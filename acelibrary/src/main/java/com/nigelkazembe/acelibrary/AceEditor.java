@@ -399,11 +399,11 @@ public class AceEditor extends WebView
         loadUrl("javascript:editor.session.setValue(\"" + text +"\");");
     }
 
-    public void setVal(String text) {
+    public void setVals(String text) {
         loadUrl("javascript:editor.setValue(\"" + text + "\");");
     }
 
-    public String getVal() {
+    public String getVals() {
         loadUrl("javascript:alert(editor.getValue());");
         String s  = getvalue;
         return s;
