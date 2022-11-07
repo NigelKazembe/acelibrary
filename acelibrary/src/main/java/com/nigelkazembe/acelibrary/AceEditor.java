@@ -166,7 +166,7 @@ public class AceEditor extends WebView
                 }
                 String []res = new String[results.size()];
                 res = results.toArray(res);
-                received.onReceived(requestedValue, res);
+                received.onReceived(requestedValue, message);
                 return true;
             }
         });
