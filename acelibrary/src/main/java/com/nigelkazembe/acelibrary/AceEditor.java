@@ -400,13 +400,12 @@ public class AceEditor extends WebView
     }
 
     public void setVals(String text) {
-        loadUrl("javascript:editor.setValue(\"" + text + "\");");
+        loadUrl("javascript:editor.setValue($(\"" + text + "\").text());");
     }
 
     public String getVals() {
         loadUrl("javascript:alert(editor.getValue());");
-        String s  = getvalue;
-        return s;
+        return getvalue;
     }
 
 
