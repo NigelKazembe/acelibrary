@@ -94,7 +94,7 @@ public class AceEditor extends WebView
 
         setResultReceivedListener(new ResultReceivedListener() {
             @Override
-            public void onReceived(int FLAG_VALUE, String... results) {
+            public void onReceived(int FLAG_VALUE, String message ,String... results) {
 
             }
         });
@@ -166,7 +166,7 @@ public class AceEditor extends WebView
                 }
                 String []res = new String[results.size()];
                 res = results.toArray(res);
-                received.onReceived(requestedValue, message);
+                received.onReceived(requestedValue, message, res);
                 return true;
             }
         });

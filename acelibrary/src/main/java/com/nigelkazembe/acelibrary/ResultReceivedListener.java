@@ -6,5 +6,5 @@ package com.nigelkazembe.acelibrary;
 
 public interface ResultReceivedListener
 {
-    void onReceived(int FLAG_VALUE, String... results);
+    void onReceived(int FLAG_VALUE, String message, String... results);
 }
